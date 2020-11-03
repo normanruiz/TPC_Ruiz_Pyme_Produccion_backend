@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    class Usuario
+    public class Usuario
     {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Correo { get; set; }
+        public string Usr { get; set; }
+        public string Pwd { get; set; }
+        public int IdPerfil { get; set; }
+        public string Avatar { get; set; }
+        public bool Sexo { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+        public bool Estado { get; set; }
+
     }
 }
