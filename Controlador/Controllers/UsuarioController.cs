@@ -6,12 +6,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace Controlador.Controllers
 {
     public class UsuarioController : ApiController
     {
         // GET: api/Usuario
+        [EnableCors(origins:"*",headers:"*", methods:"*")]
         public List<Usuario> Get()
         {
             UsuraioServicios usuarioServicio = null;
